@@ -1,0 +1,23 @@
+
+.movie_card_title,.movie_card_date{
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+@media (min-width: 640px) { /* sm */
+    .movie_card_title,.movie_card_date{
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) {/* md */
+    .movie_card_title,.movie_card_date{
+        font-size: 13px;
+    }
+}
+@media (min-width: 1024px) {/* md */
+    .movie_card_title,.movie_card_date{
+        font-size: 18px;
+    }
+}
