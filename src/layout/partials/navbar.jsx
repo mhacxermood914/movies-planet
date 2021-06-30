@@ -41,7 +41,7 @@ function Navbar() {
 
                             <div className="flex-1 flex sm:flex-none items-center">
 
-                                <Link to="/">
+                                <Link className="flex-1" to="/">
                                 
                                     <img src={logo} alt="" className="w-12 m-auto sm:w-auto" srcset="" />
 

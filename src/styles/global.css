@@ -30,7 +30,9 @@ nav a{
 .menu-content ul li:hover{
     background-color: #5F5F6E;
 }
-
+.tham-inner {
+    background-color: #5F5F6F !important;
+}
 @media (max-width: 1024px) {/* md */
     .links a{
         font-size: 12px;
