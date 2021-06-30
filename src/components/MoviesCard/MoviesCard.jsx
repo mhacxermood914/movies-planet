@@ -1,19 +1,26 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Badge } from "..";
-import { Card , ImageWrapper } from "./styles"
+import { Card, ImageWrapper } from "./styles"
 
-function MoviesCard({image,movie_date,movie_title}) {
+function MoviesCard({ image, movie_date, movie_title }) {
+    
+    const history = useHistory()
+    
+    const redirect = () => {
+        history.push('/movies/1')
+    }
 
     return (
 
-        <div className="p-4">
+        <div className="p-4" onClick={() => redirect()}>
 
             <Card className="pb-4 sm:pb-0">
 
                 <div className="p-3.5 card__img relative">
                     <img src={image} alt="" className="w-full" />
                     <div className="absolute text-white -bottom-2 right-4">
-                        <Badge  percentage=""  />
+                        <Badge percentage="" />
                     </div>
                 </div>
 
