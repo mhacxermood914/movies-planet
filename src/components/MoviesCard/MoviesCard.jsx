@@ -6,14 +6,14 @@ import { Card, ImageWrapper } from "./styles"
 function MoviesCard({ image, movie_date, movie_title }) {
     
     const history = useHistory()
-    
+
     const redirect = () => {
         history.push('/movies/1')
     }
 
     return (
 
-        <div className="p-4" onClick={() => redirect()}>
+        <div className="p-4 cursor-pointer" onClick={() => redirect()}>
 
             <Card className="pb-4 sm:pb-0">
 

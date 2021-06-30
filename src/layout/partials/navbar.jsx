@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { logo ,search_icon } from "../../assets";
 import { Button } from "../../components/Buttons/Button";
 import styled from "styled-components";
+import { Link } from "react-router-dom"
 
 
 const Nav = styled.nav`
@@ -40,7 +41,12 @@ function Navbar() {
 
                             <div className="flex-1 flex sm:flex-none items-center">
 
-                                <img src={logo} alt="" className="w-12 m-auto sm:w-auto" srcset="" />
+                                <Link to="/">
+                                
+                                    <img src={logo} alt="" className="w-12 m-auto sm:w-auto" srcset="" />
+
+                                </Link>
+
 
                             </div>
 
