@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { logo } from "../../assets";
+import { logo ,search_icon } from "../../assets";
 import { Button } from "../../components/Buttons/Button";
 import styled from "styled-components";
 
@@ -38,13 +38,13 @@ function Navbar() {
                         </div>
                         <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
 
-                            <div className="flex-shrink-0 flex items-center">
+                            <div className="flex-1 flex sm:flex-none items-center">
 
-                                <img src={logo} alt="" srcset="" />
+                                <img src={logo} alt="" className="w-12 m-auto sm:w-auto" srcset="" />
 
                             </div>
 
-                            <div className="hidden sm:block sm:ml-6">
+                            <div className="hidden flex-1 sm:block sm:ml-6">
 
                                 <div className="flex space-x-4 links">
 
@@ -59,6 +59,10 @@ function Navbar() {
                                     
                                 </div>
                             </div>
+
+                            <Button className="transform lg:translate-y-2 sm:hidden lg:-translate-x-4"><img src={search_icon} alt="" /></Button>
+
+                            
                         </div>
 
                         <div className="hidden sm:block absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -67,6 +71,7 @@ function Navbar() {
 
                                 <div className="flex space-x-4 lg:block">
 
+                                    <Button className="transform lg:translate-y-2 lg:-translate-x-4"><img src={search_icon} alt="" /></Button>
                                    
                                     <Button className="text-white"  width="97px" height="40px" border>Join</Button>
 
@@ -75,6 +80,7 @@ function Navbar() {
                                 </div>
 
                             </div>
+                            
 
                         </div>
 
@@ -87,7 +93,10 @@ function Navbar() {
 
                             <div className="relative z-10">
                                 <ul>
-                                    <li></li>
+                                    <li><a href="" className="text-white">Movies</a></li>
+                                    <li><a href="" className="text-white">TV Shows</a></li>
+                                    <li><a href="" className="text-white">People</a></li>
+                                    <li><a href="" className="text-white">More</a></li>
                                 </ul>
                             </div>
 

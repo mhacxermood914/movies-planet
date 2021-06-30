@@ -8,7 +8,7 @@ function MoviesCard({image,movie_date,movie_title}) {
 
         <div className="p-4">
 
-            <Card>
+            <Card className="pb-4 sm:pb-0">
 
                 <div className="p-3.5 card__img relative">
                     <img src={image} alt="" className="w-full" />
@@ -17,7 +17,7 @@ function MoviesCard({image,movie_date,movie_title}) {
                     </div>
                 </div>
 
-                <div className="px-3.5">
+                <div className="px-3.5 pt-6">
                     <h3 className="movie_card_title text-white">{movie_title}</h3>
                     <h4 className="movie_card_date">{movie_date}</h4>
                 </div>

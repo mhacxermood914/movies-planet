@@ -32,7 +32,7 @@ function MoviesDetails({image}) {
 
                     <div className="flex flex-col sm:flex-row md:p-8 lg:p-0">
 
-                        <div className="movie_img_wrapper md:p-0 py-16  lg:mt-8 md:w-full  lg:w-1/2 2xl:w-1/4">
+                        <div className="movie_img_wrapper md:p-0 pt-28 px-16  lg:mt-8 md:w-full  lg:w-1/2 2xl:w-1/4">
 
                             <img src={image} alt="" className="h-full w-full object-fit" />
 
@@ -42,7 +42,7 @@ function MoviesDetails({image}) {
 
                             <div></div>
 
-                            <div>
+                            <div className="mt-12 md:mt-0">
 
                                 <h1 className="movie_title text-white">Godzilla vs. Kong <span>(2021)</span> </h1>
 
@@ -56,51 +56,62 @@ function MoviesDetails({image}) {
 
                                 </ul>
 
-                                <div className="flex items-center justify-between w-5/6 md:w-3/5 lg:w-1/3 2xl:w-1/4  mt-8">
+                                <div className="">
 
-                                    <div className="">
+                                    <div className="flex items-center justify-between w-5/6 md:w-3/5 lg:w-1/3 2xl:w-1/4  mt-8">
 
-                                        <Badge width="60px" height="60px" percentage />
-                                    </div>
+                                        <div className="flex">
 
-                                    <div className="ml-4">
+                                            <Badge width="60px" height="60px" percentage />
 
-                                        <Badge width="40px" height="40px" className="ml-12 relative" >
+                                            <div className="text-sm sm:w-12 text-white p-2">
+                                                User
+                                                Score
+                                            </div>
 
-                                            <img src={heart} alt="" className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                                        </div>
 
-                                        </Badge>
+                                        <div className="sm:ml-4 flex justify-between">
 
-                                    </div>
+                                            <Badge width="40px" height="40px" className="ml-12 relative" >
 
-                                    <div>
+                                                <img src={heart} alt="" className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
 
-                                        <Badge width="40px" height="40px" className="ml-12 relative" >
+                                            </Badge>
 
-                                            <img src={bookmark} alt="" className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                                        </div>
 
-                                        </Badge>
+                                        <div className="mx-2 sm:mx-auto">
 
-                                    </div>
+                                            <Badge width="40px" height="40px" className="ml-12 relative" >
 
-                                    <div>
+                                                <img src={bookmark} alt="" className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
 
-                                        <Badge width="40px" height="40px" className="ml-12 relative" >
+                                            </Badge>
 
-                                            <img src={star} alt="" className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+                                        </div>
 
-                                        </Badge>
+                                        <div>
+
+                                            <Badge width="40px" height="40px" className="ml-12 relative" >
+
+                                                <img src={star} alt="" className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2" />
+
+                                            </Badge>
+
+                                        </div>
 
                                     </div>
 
                                 </div>
+
                             </div>
 
                             <div className="overview mt-12">
 
                                 <h1 className="text-white mb-2">Overview</h1>
 
-                                <p className="mb-4 text-white font-normal">
+                                <p className="mb-4 text-white text-md font-normal">
                                 
                                     In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on 
                                     a collision course that will see the two most powerful forces of nature on the planet collide in a 
@@ -110,44 +121,44 @@ function MoviesDetails({image}) {
 
                             </div>
 
-                            <div className="participants_names_and_roles grid grid-rows-2 gap-y-4 md:gap-y-0 grid-cols-2 md:grid-cols-3 md:grid-rows-none mt-8">
+                            <div className="participants_names_and_roles grid grid-rows-2 gap-y-12 gap-x-8 md:gap-y-0 grid-cols-2 md:grid-cols-3 md:grid-rows-none mt-8">
                                 <div>
 
-                                    <h1 className="author_name text-white font-semibold">Adam Wingard</h1>
+                                    <h1 className="author_name text-white text-sm sm:text-xl md:text-base font-semibold">Adam Wingard</h1>
 
-                                    <h2 className="author_role text-sm">Director</h2>
+                                    <h2 className="author_role text-md">Director</h2>
 
                                 </div>
 
                                 <div>
 
-                                    <h1 className="author_name text-white font-semibold ">Eric Pearson</h1>
+                                    <h1 className="author_name text-white text-sm sm:text-xl md:text-base font-semibold ">Eric Pearson</h1>
 
-                                    <h2 className="author_role text-sm">Screenplay</h2>
+                                    <h2 className="author_role text-md">Screenplay</h2>
 
                                 </div>
 
                                 <div>
 
-                                    <h1 className="author_name text-white font-semibold">Max Borenstein</h1>
+                                    <h1 className="author_name text-white text-sm sm:text-xl md:text-base font-semibold">Max Borenstein</h1>
 
-                                    <h2 className="author_role text-sm">Screenplay</h2>
+                                    <h2 className="author_role text-md">Screenplay</h2>
 
                                 </div>
 
                                 <div className="md:mt-3">
 
-                                    <h1 className="author_name text-white font-semibold">Terry Rossio</h1>
+                                    <h1 className="author_name text-white text-sm sm:text-xl md:text-base font-semibold">Terry Rossio</h1>
 
-                                    <h2 className="author_role text-sm">Story</h2>
+                                    <h2 className="author_role text-md">Story</h2>
 
                                 </div>
 
                                 <div className="md:mt-3">
 
-                                    <h1 className="author_name text-white font-semibold">Zach Shields</h1>
+                                    <h1 className="author_name text-white text-sm sm:text-xl md:text-base font-semibold">Zach Shields</h1>
 
-                                    <h2 className="author_role text-sm">Story</h2>
+                                    <h2 className="author_role text-md">Story</h2>
 
                                 </div>
 
@@ -159,10 +170,10 @@ function MoviesDetails({image}) {
 
                 <div className="top_billed_cast relative  pt-14 md:px-8 lg:px-24">
 
-                    <h1 className="text-white font-normal text-2xl">Top Billed Cast</h1>
+                    <h1 className="text-white font-normal text-2xl ml-6 sm:ml-auto ">Top Billed Cast</h1>
 
                     <div className="">
-                        <Slider {...settings} className="my-16 relative" ref={slickRef}>
+                        <Slider {...settings} className="my-16 relative mx-4 md:mx-auto" ref={slickRef}>
                             <div>
                                 <div>
                                     <img src={author_3} alt="" />

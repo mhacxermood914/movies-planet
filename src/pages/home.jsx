@@ -1,7 +1,7 @@
 import React from "react"
 import { MoviesCard } from "./../components"
 import { Button } from "../components/Buttons/Button"
-import { gorilla, justice_league, img_1, img_2, img_3, img_4 } from "./../assets"
+import { gorilla, justice_league, img_1, img_2, img_3, img_4, img_5,img_6 } from "./../assets"
 
 function Home(){
     return (
@@ -20,6 +20,8 @@ function Home(){
                     <MoviesCard image={img_2} movie_date={`Mar 18, 2021`} movie_title={`Zack Snyder's Justice League`} />
                     <MoviesCard image={img_3} movie_date={`Mar 18, 2021`} movie_title={`Zack Snyder's Justice League`} />
                     <MoviesCard image={img_4} movie_date={`Mar 18, 2021`} movie_title={`Zack Snyder's Justice League`} />
+                    <MoviesCard image={img_5} movie_date={`Mar 18, 2021`} movie_title={`Zack Snyder's Justice League`} />
+                    <MoviesCard image={img_6} movie_date={`Mar 18, 2021`} movie_title={`Zack Snyder's Justice League`} />
 
                 </div>
 

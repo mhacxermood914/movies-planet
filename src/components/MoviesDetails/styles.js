@@ -30,12 +30,11 @@ export const FullDesc = styled.div`
         @media (max-width:${media.breakpoints}){
             & .movie_title{
               font-size : 1.2rem ;
-              text-align: center;
               margin-bottom:12px;
             }
 
             & ul li{
-                font-size: 11.2px;
+                font-size: 11px;
             }
 
             & ul li:nth-child(even){
