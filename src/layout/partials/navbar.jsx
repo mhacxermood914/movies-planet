@@ -99,7 +99,7 @@ function Navbar() {
 
                             <div className="relative z-10">
                                 <ul>
-                                    <li><a href="" className="text-white">Movies</a></li>
+                                    <li><Link to="/" className="text-white">Movies</Link></li>
                                     <li><a href="" className="text-white">TV Shows</a></li>
                                     <li><a href="" className="text-white">People</a></li>
                                     <li><a href="" className="text-white">More</a></li>
